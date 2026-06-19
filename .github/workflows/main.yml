@@ -25,5 +25,5 @@ jobs:
         run: |
           git remote add upstream https://github.com/openfootball/worldcup.json.git
           git fetch upstream
-          git merge upstream/master --allow-unrelated-histories
+          git merge upstream/master --allow-unrelated-histories -X theirs
           git push origin master
