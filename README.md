@@ -1,22 +1,10 @@
 
-## Update - What's news?
+Congrats to Spain! World Cup champs 2026!    Special thanks to [Dr. Chester Ismay](https://github.com/ismayc) (maker of [World Cup Viewer](https://ismayc.github.io/world-cup-viewer/)) for the upstream (auto-filler) updates getting close to post-match live score updates here   
+and thanks for your updates & corrections (old school) by hand. See you in 2030.      
+Or maybe at the Euro 2028, see [2028/euro.json @ euro.json](https://github.com/openfootball/euro.json/blob/master/2028/euro.json).
 
-Q: [Updates for upcoming rounds?](https://github.com/openfootball/worldcup/issues/91)
 
-A: sorry for the déjà vu.  yes, your help is more than welcome to fill-in the teams once known for the round of 32/16/8 etc.
-please note - the datasets for the knock-out (k.o.) matches are (auto-)generated from the upstream text source 
-here <https://github.com/openfootball/worldcup/blob/master/2026--usa/cup_finals.txt>    
-
----
-
-thanks to [Dr. Chester Ismay](https://github.com/ismayc) (maker of [World Cup Viewer¹](https://ismayc.github.io/world-cup-viewer/)) for the upstream (auto-filler) updates getting close to post-match live score updates here!   
-
-and thanks for your updates & corrections (old school) by hand.      
-
-¹: yes, you can. add your projects using worldcup.json [on this page right here](#projects-in-the-real-world-using-worldcupjson).
-
----  
-
+<!--
 sorry for the slow start-up on day 1. good morning it was 9am here in austria when i checked in.  
 please note,  the datasets are (auto-)generated from the upstream text source 
 here <https://github.com/openfootball/worldcup/blob/master/2026--usa/cup.txt>    
@@ -53,15 +41,7 @@ PS:  For full match details incl. line-ups, (yellow/red card) bookings, player s
 I will put together an (alternate) upstream (source) text - 
 see [`worldcup/more`](https://github.com/openfootball/worldcup/tree/master/more) for the history from 1930 to 2022 -  but again sorry, that, page will NOT be live updated.
 
-
-<!--
-For, live updates try the unoffical/offical fifa api <>.
 -->
-
-
-> [!TIP]
->  You can use the [`fbtxt2json` command-line tool](https://github.com/openfootball/quick-starter)
->  to convert any file in the Football.TXT format to JSON (or use `fbtxt2csv` to convert to CSV).
 
   
 
@@ -71,6 +51,12 @@ Free open public domain football data for the world cups (national teams and clu
 (JavaScript Object Notation)
 data interchange format
 incl. Canada/USA/Mexico 2026, USA 2025, Qatar 2022, Russia 2018 and more - No API key required ;-).
+
+
+> [!TIP]
+>  You can use the [`fbtxt2json` command-line tool](https://github.com/openfootball/quick-starter)
+>  to convert any file in the Football.TXT format to JSON (or use `fbtxt2csv` to convert to CSV).
+
 
 
 ## National Teams
@@ -106,30 +92,36 @@ Example - World Cup in Canada/USA/Mexico 2026 Match Schedule (Fixtures and Resul
     "group": "Group A",
     "ground": "Guadalajara (Zapopan)"
    },
-   {"round": "Matchday 8",
-    "date": "2026-06-18",
-    "time": "12:00 UTC-4",
-    "team1": "Czech Republic",
-    "team2": "South Africa",
-    "group": "Group A",
-    "ground": "Atlanta"
-   },
-   {"round": "Matchday 8",
-    "date": "2026-06-18",
-    "time": "19:00 UTC-6",
-    "team1": "Mexico",
-    "team2": "South Korea",
-    "group": "Group A",
-    "ground": "Guadalajara (Zapopan)"
-   },
    ...
+   {"round": "Match for third place",
+    "date": "2026-07-18",
+    "time": "17:00 UTC-4",
+    "team1": "France",
+    "team2": "England",
+    "score": {"ft": [4, 6], "ht": [0, 4]},
+    "goals1": 
+     [{"name": "Kylian Mbappé", "minute": "48"},
+      {"name": "Bradley Barcola", "minute": "54"},
+      {"name": "Kylian Mbappé", "minute": "66"},
+      {"name": "Ousmane Dembélé", "minute": "90+6"}],
+    "goals2": 
+     [{"name": "Declan Rice", "minute": "3"},
+      {"name": "Ezri Konsa", "minute": "18"},
+      {"name": "Bukayo Saka", "minute": "37"},
+      {"name": "Bukayo Saka", "minute": "45+1"},
+      {"name": "Bukayo Saka", "minute": "87", "penalty": true},
+      {"name": "Jude Bellingham", "minute": "90+8"}],
+    "ground": "Miami (Miami Gardens)"},
    {"round": "Final",
+    "num": 104,
     "date": "2026-07-19",
     "time": "15:00 UTC-4",
-    "team1": "W101",
-    "team2": "W102",
-    "ground": "New York/New Jersey (East Rutherford)"
-   }
+    "team1": "Spain",
+    "team2": "Argentina",
+    "score": {"et": [1, 0], "ft": [0, 0], "ht": [0, 0]},
+    "goals1": [{"name": "Ferran Torres", "minute": "106"}],
+    "goals2": [],
+    "ground": "New York/New Jersey (East Rutherford)"}
 ]}
 ```
 
@@ -310,6 +302,7 @@ _Yes, you're more than welcome to send a pull request (PR) with your project!_
 
 - <https://observablehq.com/@ehouais/world-cup-data-viz>  --  An [Observable](https://observablehq.com) notebook that generates various data viz based on *worldcup.json* data (primarily designed for pen plotters).
 
+- <https://wc26.zavyalov.site/> -- visualization of the knockout stage for World Cup 2026 with data taken from worldcup.json
 
 _Feel free to add your project here!_
 
