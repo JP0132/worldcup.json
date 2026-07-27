@@ -1,3 +1,11 @@
+**What's news?**
+
+thanks to Simon Porritt for [highlighting](https://github.com/openfootball/worldcup.json/issues/50) and putting together **a simple javascript wrapper API**  around the worldcup.json datatsets file for easier queries (e.g. `getMatches(year: number)`, `getSquads(year: number)`, etc) and visualizations, see <https://github.com/visuallyjs/open-football-worldcup-datasource>.
+
+ps: the idea and plan here is to add  more (and fill-in the missing) match details in the upcoming weeks (that is, xi starter line-ups, bookings (yellow, red, yellow-red cards), substitutions, etc).  if you have any request or comments on the .json format,  let us know. cheers. 
+
+
+---
 
 Congrats to Spain! World Cup champs 2026!    Special thanks to [Dr. Chester Ismay](https://github.com/ismayc) (maker of [World Cup Viewer](https://ismayc.github.io/world-cup-viewer/)) for the upstream (auto-filler) updates getting close to post-match live score updates here   
 and thanks for your updates & corrections (old school) by hand. See you in 2030.      
