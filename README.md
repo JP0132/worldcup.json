@@ -1,6 +1,6 @@
-**What's news?*
+**What's news?**
 
-thanks to Simon Porritt for [highlighting](https://github.com/openfootball/worldcup.json/issues/50) and putting together a simple wrapper API  around the worldcup.json datatsets file for easier queries and visualizations, see <https://github.com/visuallyjs/open-football-worldcup-datasource>.
+thanks to Simon Porritt for [highlighting](https://github.com/openfootball/worldcup.json/issues/50) and putting together **a simple javascript wrapper API**  around the worldcup.json datatsets file for easier queries (e.g. `getMatches(year: number)`, `getSquads(year: number)`, etc) and visualizations, see <https://github.com/visuallyjs/open-football-worldcup-datasource>.
 
 ps: the idea and plan here is to add  more (and fill-in the missing) match details in the upcoming weeks (that is, xi starter line-ups, bookings (yellow, red, yellow-red cards), substitutions, etc).  if you have any request or comments on the .json format,  let us know. cheers. 
 
