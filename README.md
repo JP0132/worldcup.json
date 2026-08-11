@@ -1,8 +1,19 @@
 **What's news?**
 
-thanks to Simon Porritt for [highlighting](https://github.com/openfootball/worldcup.json/issues/50) and putting together **a simple javascript wrapper API**  around the worldcup.json datatsets file for easier queries (e.g. `getMatches(year: number)`, `getSquads(year: number)`, etc) and visualizations, see <https://github.com/visuallyjs/open-football-worldcup-datasource>.
+full match details (xi starter lineup, bench, sub(stitution)s, penalty shootout, bookings, referees, etc) are now online.
+see  [`2026/worldcup-full.json`](https://github.com/openfootball/worldcup.json/blob/master/2026/worldcup-full.json) or [`1930/worldcup-full.json`](https://github.com/openfootball/worldcup.json/blob/master/1930/worldcup-full.json) as real-world examples.
+if you have any request or comments on the .json format,  let us know. 
 
-ps: the idea and plan here is to add  more (and fill-in the missing) match details in the upcoming weeks (that is, xi starter line-ups, bookings (yellow, red, yellow-red cards), substitutions, etc).  if you have any request or comments on the .json format,  let us know. cheers. 
+**format change note:**  the minute is now ALWAYS a string (to support optional injury/stoppage time) inline e.g.
+
+``` json
+{..., "minute": "82"},
+{..., "minute": "90+4"},
+```
+
+---
+
+Thanks to Simon Porritt for [highlighting](https://github.com/openfootball/worldcup.json/issues/50) and putting together **a simple javascript wrapper API**  around the worldcup.json datatsets file for easier queries (e.g. `getMatches(year: number)`, `getSquads(year: number)`, etc) and visualizations, see <https://github.com/visuallyjs/open-football-worldcup-datasource> and <https://visuallyjs.com/demonstrations/fifaworldcup>.
 
 
 ---
@@ -174,8 +185,8 @@ Example - World Cup in Qatar 2022 Match Schedule (Fixtures and Results) - [`2022
     "score": {"p": [4, 2], "et": [3, 3], "ft": [2, 2], "ht": [2, 0]},
     "goals1":
      [{"name": "Lionel Messi", "minute": "23", "penalty": true},
-      {"name": "Lionel Messi", "minute": "108"},
-      {"name": "Ángel Di María", "minute": "36"}],
+      {"name": "Ángel Di María", "minute": "36"},
+      {"name": "Lionel Messi", "minute": "108"}],
     "goals2":
      [{"name": "Kylian Mbappé", "minute": "80", "penalty": true},
       {"name": "Kylian Mbappé", "minute": "81"},
@@ -244,8 +255,8 @@ National Teams:
 - World Cups in [`/worldcup`](https://github.com/openfootball/worldcup)
 
 Note: For the World Cup 2026 please update the source text file
-[`/worldcup/2026--usa/cup.txt`](https://github.com/openfootball/worldcup/blob/master/2026--usa/cup.txt) for the group stage and
-[`/worldcup/2026--usa/cup_finals.txt`](https://github.com/openfootball/worldcup/blob/master/2026--usa/cup_finals.txt) for the knockout (quarter-finals, semi-finals, etc.) stage.
+[`/worldcup/2026--canada-usa-mexico/cup.txt`](https://github.com/openfootball/worldcup/blob/master/2026--canada-usa-mexico/cup.txt) for the group stage and
+[`/worldcup/2026--canada-usa-mexico/cup_finals.txt`](https://github.com/openfootball/worldcup/blob/master/2026--canada-usa-mexico/cup_finals.txt) for the knockout (quarter-finals, semi-finals, etc.) stage.
 
 
 Clubs:
@@ -311,6 +322,8 @@ _Yes, you're more than welcome to send a pull request (PR) with your project!_
 - <https://observablehq.com/@ehouais/world-cup-data-viz>  --  An [Observable](https://observablehq.com) notebook that generates various data viz based on *worldcup.json* data (primarily designed for pen plotters).
 
 - <https://wc26.zavyalov.site/> -- visualization of the knockout stage for World Cup 2026 with data taken from worldcup.json
+
+- <https://github.com/Muntaha-Islam0019/worldcup-dashboard> -- Power BI dashboard for the 2026 World Cup; group standings, tournament record, venue map with satellite imagery, Golden Boot race, and a custom knockout bracket built with Deneb (Vega-Lite)
 
 _Feel free to add your project here!_
 
