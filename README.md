@@ -185,8 +185,8 @@ Example - World Cup in Qatar 2022 Match Schedule (Fixtures and Results) - [`2022
     "score": {"p": [4, 2], "et": [3, 3], "ft": [2, 2], "ht": [2, 0]},
     "goals1":
      [{"name": "Lionel Messi", "minute": "23", "penalty": true},
-      {"name": "Lionel Messi", "minute": "108"},
-      {"name": "Ángel Di María", "minute": "36"}],
+      {"name": "Ángel Di María", "minute": "36"},
+      {"name": "Lionel Messi", "minute": "108"}],
     "goals2":
      [{"name": "Kylian Mbappé", "minute": "80", "penalty": true},
       {"name": "Kylian Mbappé", "minute": "81"},
@@ -255,8 +255,8 @@ National Teams:
 - World Cups in [`/worldcup`](https://github.com/openfootball/worldcup)
 
 Note: For the World Cup 2026 please update the source text file
-[`/worldcup/2026--usa/cup.txt`](https://github.com/openfootball/worldcup/blob/master/2026--usa/cup.txt) for the group stage and
-[`/worldcup/2026--usa/cup_finals.txt`](https://github.com/openfootball/worldcup/blob/master/2026--usa/cup_finals.txt) for the knockout (quarter-finals, semi-finals, etc.) stage.
+[`/worldcup/2026--canada-usa-mexico/cup.txt`](https://github.com/openfootball/worldcup/blob/master/2026--canada-usa-mexico/cup.txt) for the group stage and
+[`/worldcup/2026--canada-usa-mexico/cup_finals.txt`](https://github.com/openfootball/worldcup/blob/master/2026--canada-usa-mexico/cup_finals.txt) for the knockout (quarter-finals, semi-finals, etc.) stage.
 
 
 Clubs:
