@@ -1,8 +1,8 @@
 **What's news?**
 
 full match details (xi starter lineup, bench, sub(stitution)s, penalty shootout, bookings, referees, etc) are now online.
-see  [`2026/worldcup-full.json`](https://github.com/openfootball/worldcup.json/blob/master/2026/worldcup-full.json) or [`1930/worldcup-full.json`](https://github.com/openfootball/worldcup.json/blob/master/1930/worldcup-full.json) as an example.
-if you have any request or comments on the .json format,  let us know. cheers. 
+see  [`2026/worldcup-full.json`](https://github.com/openfootball/worldcup.json/blob/master/2026/worldcup-full.json) or [`1930/worldcup-full.json`](https://github.com/openfootball/worldcup.json/blob/master/1930/worldcup-full.json) as real-world examples.
+if you have any request or comments on the .json format,  let us know. 
 
 **format change note:**  the minute is now ALWAYS a string (to support optional injury/stoppage time) inline e.g.
 
