@@ -1,8 +1,19 @@
 **What's news?**
 
-thanks to Simon Porritt for [highlighting](https://github.com/openfootball/worldcup.json/issues/50) and putting together **a simple javascript wrapper API**  around the worldcup.json datatsets file for easier queries (e.g. `getMatches(year: number)`, `getSquads(year: number)`, etc) and visualizations, see <https://github.com/visuallyjs/open-football-worldcup-datasource>.
+full match details (xi starter lineup, bench, sub(stitution)s, penalty shootout, bookings, referees, etc) are now online.
+see  [`2026/worldcup-full.json`](https://github.com/openfootball/worldcup.json/blob/master/2026/worldcup-full.json) or [`1930/worldcup-full.json`](https://github.com/openfootball/worldcup.json/blob/master/1930/worldcup-full.json) as an example.
+if you have any request or comments on the .json format,  let us know. cheers. 
 
-ps: the idea and plan here is to add  more (and fill-in the missing) match details in the upcoming weeks (that is, xi starter line-ups, bookings (yellow, red, yellow-red cards), substitutions, etc).  if you have any request or comments on the .json format,  let us know. cheers. 
+format change note: the minute is now ALWAYS a string (to support optional injury/stoppage time) inline e.g.
+
+``` json
+{..., "minute": "82"},
+{..., "minute": "90+4"},
+```
+
+---
+
+Thanks to Simon Porritt for [highlighting](https://github.com/openfootball/worldcup.json/issues/50) and putting together **a simple javascript wrapper API**  around the worldcup.json datatsets file for easier queries (e.g. `getMatches(year: number)`, `getSquads(year: number)`, etc) and visualizations, see <https://github.com/visuallyjs/open-football-worldcup-datasource> and <https://visuallyjs.com/demonstrations/fifaworldcup>.
 
 
 ---
